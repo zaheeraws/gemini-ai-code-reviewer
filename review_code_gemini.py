@@ -310,9 +310,9 @@ def main():
     print("event_name: " + event_name)
     # if event_name == "issue_comment":
     # Process comment trigger
-    if not event_data.get("issue", {}).get("pull_request"):
-        print("Comment was not on a pull request")
-        return
+    # if not event_data.get("issue", {}).get("pull_request"):
+    # print("Comment was not on a pull request")
+    # return
 
     diff = get_diff(pr_details.owner, pr_details.repo, pr_details.pull_number)
     if not diff:
